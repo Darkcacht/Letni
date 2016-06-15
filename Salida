@@ -1,3 +1,5 @@
+salir = 2
+while salir != 1:
 	salir = input("Desea salir?:\n1.Si\n2.No\n")
 
 	while salir !=1 and salir !=2:
