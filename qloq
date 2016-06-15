@@ -1,0 +1,6 @@
+	salir = input("Desea salir?:\n1.Si\n2.No\n")
+
+	while salir !=1 and salir !=2:
+	    salir = input("Error! Vuelve a introducir si desea salir correctamente: ")
+	if salir == 1:
+	    print "\nNos vemos"
