@@ -5,10 +5,11 @@ import os
 clear = lambda: os.system('clear')
 clear()
 
-def contarVocales(palabra):
+
+def contarVocales(x):
 
 	contador = 0
-	for letra in palabra:
+	for letra in x:
 		if letra == "A" or letra == "a":
 			contador += 1
 		elif letra == "E" or letra == "e":
@@ -17,9 +18,14 @@ def contarVocales(palabra):
 			contador += 1
 		elif letra == "O" or letra == "o":
 			contador += 1
-		elif letra == "U" or letra == "o":
+		elif letra == "U" or letra == "u":
 			contador += 1
 
-	return(contador)
+	if contador == 1:
+		print "Esta palabra tiene", contador, "vocal"
+	else:
+		print "Esta palabra tiene", contador, "vocales"
 
-print contarVocales("murcielago")
+pal = raw_input("Ingresa la palabra: ")
+contarVocales(pal)
+
