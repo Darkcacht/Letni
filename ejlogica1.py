@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+import os
+clear = lambda: os.system('clear')
+clear()
+
 numero = 1
 
 while numero < 10000:
